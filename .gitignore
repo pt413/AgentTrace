@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# React
+frontend/node_modules/
+frontend/build/
+
+# OS
+.DS_Store
+
+# Local configuration and secrets. Commit only the checked-in *.example templates.
+.env
+.env.*
+!.env.example
+backend/.env
+backend/.env.*
+!backend/.env.example
+frontend/.env
+frontend/.env.*
+!frontend/.env.example
+

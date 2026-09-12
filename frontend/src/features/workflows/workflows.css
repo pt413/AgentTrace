@@ -1,0 +1,94 @@
+button { cursor: pointer; border: 1px solid #dce2ec; border-radius: 7px; background: #fff; padding: 7px 10px; color: #334155; }
+button:hover { background: #f1f5f9; }
+button:disabled { cursor: not-allowed; opacity: .5; }
+button:focus-visible, input:focus-visible, textarea:focus-visible, select:focus-visible { outline: 3px solid #a5b4fc; outline-offset: 2px; }
+input, select, textarea { font: inherit; width: 100%; min-width: 0; padding: 9px 10px; border-radius: 7px; border: 1px solid #dce2ec; background: white; color: #172033; }
+textarea { resize: vertical; }
+.app-header { flex-shrink: 0; gap: 24px; }
+.app-header nav { display: flex; gap: 8px; }
+.app-header nav button { color: #cbd5e1; background: transparent; border-color: transparent; }
+.app-header nav button[aria-current="page"] { background: #303b50; color: #fff; border-color: #475569; }
+.connection-status.offline { color: #fda4af; }
+.workflow-page { display: flex; flex-direction: column; flex: 1; min-height: 0; }
+.workflow-topbar { flex-shrink: 0; display: flex; align-items: center; gap: 18px; padding: 12px 20px; background: #fff; border-bottom: 1px solid #e4e9f1; font-size: 12px; }
+.workflow-topbar label { display: flex; align-items: center; gap: 12px; font-weight: 700; }
+.workflow-topbar input { width: 240px; font-weight: 600; }
+.workflow-topbar > span { margin-left: auto; color: #64748b; }
+.workflow-workspace { flex: 1; min-height: 0; display: grid; grid-template-columns: 260px minmax(340px, 1fr) 300px; }
+.agent-library, .run-panel { padding: 22px 16px; overflow-y: auto; background: #fff; }
+.agent-library { border-right: 1px solid #e4e9f1; }
+.agent-library h3 { display: flex; justify-content: space-between; margin: 24px 0 12px; font-size: 13px; }
+.agent-library h3 span { color: #94a3b8; }
+.helper { color: #64748b; font-size: 12px; line-height: 1.6; overflow-wrap: anywhere; }
+.agent-library-list { display: flex; flex-direction: column; gap: 9px; }
+.agent-library-card { padding: 11px 12px; background: #f8fafc; border: 1px solid #e4e9f1; border-radius: 10px; cursor: grab; }
+.library-card-heading { display: flex; align-items: center; justify-content: space-between; gap: 8px; font-size: 13px; }
+.library-card-heading button { padding: 2px 8px; font-size: 19px; line-height: 1.2; }
+.agent-library-card p { margin: 7px 0 0; font-size: 11px; line-height: 1.5; color: #64748b; }
+.library-card-footer { display: flex; align-items: center; justify-content: space-between; margin-top: 9px; font-size: 10px; color: #64748b; }
+.library-card-footer button { padding: 3px 6px; font-size: 11px; }
+.external-actions { display: flex; gap: 6px; margin-bottom: 12px; }
+.external-actions button { flex: 1; padding: 8px 3px; color: #4f46e5; font-size: 11px; }
+.workflow-canvas { position: relative; min-width: 0; min-height: 0; }
+.canvas-empty { position: absolute; top: 50%; left: 50%; width: 300px; max-width: 90%; transform: translate(-50%, -50%); pointer-events: none; text-align: center; }
+.canvas-empty h2 { font-size: 18px; }
+.canvas-empty p { font-size: 13px; line-height: 1.7; color: #64748b; }
+.empty-icon { display: inline-grid; place-items: center; width: 54px; height: 54px; background: #e8eafe; color: #6366f1; border: 1px dashed #a5b4fc; border-radius: 14px; font-size: 30px; }
+.workflow-node { width: 236px; padding: 14px; border: 1px solid #dbe3ef; border-top: 4px solid var(--node-accent); border-radius: 11px; background: white; box-shadow: 0 5px 16px #0f172a12; }
+.workflow-node.selected { box-shadow: 0 0 0 3px #c7d2fe; }
+.workflow-node-kind { display: flex; align-items: center; justify-content: space-between; gap: 6px; margin-bottom: 9px; font-size: 9px; font-weight: 700; text-transform: uppercase; color: var(--node-accent); }
+.workflow-node > strong { display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 14px; }
+.workflow-node > p { color: #64748b; font-size: 11px; line-height: 1.5; height: 33px; overflow: hidden; }
+.node-actions { display: flex; gap: 5px; }
+.node-actions button { padding: 5px 7px; font-size: 10px; }
+.workflow-node .react-flow__handle { width: 13px; height: 13px; background: var(--node-accent); border: 2px solid white; }
+.run-panel { border-left: 1px solid #e4e9f1; }
+.run-panel h2 { margin: 5px 0 22px; font-size: 16px; }
+.agent-form, .agent-form fieldset { display: flex; flex-direction: column; gap: 16px; }
+.agent-form fieldset { border: 0; padding: 0; margin: 0; min-width: 0; }
+.agent-form label { display: flex; flex-direction: column; gap: 7px; color: #475569; font-size: 12px; font-weight: 600; }
+.agent-form .helper { margin: -6px 0 0; }
+.primary-button { background: #4f46e5; color: white; border-color: #4f46e5; }
+.primary-button:hover { background: #4338ca; }
+.danger-button { color: #b42318; }
+.run-button { width: 100%; padding: 11px; font-weight: 650; }
+.inline-error { background: #fff1f0; color: #b42318; border: 1px solid #fecaca; border-radius: 8px; padding: 10px; font-size: 12px; line-height: 1.5; overflow-wrap: anywhere; }
+.inline-error button { display: block; margin-top: 8px; }
+.run-progress { font-size: 12px; color: #4f46e5; line-height: 1.6; }
+.run-result { margin-top: 24px; padding-top: 16px; border-top: 1px solid #e4e9f1; }
+.result-heading { display: flex; justify-content: space-between; align-items: center; }
+.run-result h3 { margin: 0; font-size: 14px; }
+.run-result h4 { margin-bottom: 6px; font-size: 12px; }
+.run-result pre, .contract-note pre { padding: 10px; background: #f1f5f9; border-radius: 6px; font: 11px/1.6 ui-monospace, Consolas, monospace; white-space: pre-wrap; overflow-wrap: anywhere; max-height: 240px; overflow: auto; }
+.dialog-backdrop { position: fixed; z-index: 100; inset: 0; display: flex; align-items: center; justify-content: center; background: #0f172a70; padding: 24px; }
+.dialog { width: 620px; max-width: 100%; max-height: 90vh; overflow-y: auto; background: #fff; padding: 24px; border-radius: 14px; box-shadow: 0 24px 60px #0f172a40; }
+.dialog-header { display: flex; justify-content: space-between; align-items: center; gap: 20px; margin-bottom: 24px; }
+.dialog-header h2 { font-size: 18px; margin: 0; overflow-wrap: anywhere; }
+.dialog-actions { display: flex; justify-content: flex-end; gap: 10px; margin-top: 20px; }
+.contract-note { padding: 12px; border: 1px solid #e2e8f0; border-radius: 8px; font-size: 12px; overflow-wrap: anywhere; }
+.contract-note p { margin: 4px 0; color: #64748b; line-height: 1.6; }
+.connection-columns { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.connection-columns fieldset { border: 1px solid #e2e8f0; border-radius: 8px; min-width: 0; }
+.connection-columns legend { font-size: 12px; font-weight: 700; padding: 0 5px; }
+.connection-option { display: flex; align-items: center; gap: 10px; padding: 10px 0; font-size: 12px; }
+.connection-option input { width: auto; flex-shrink: 0; }
+.connection-option small { display: block; margin-top: 4px; font: 9px/1.5 monospace; overflow-wrap: anywhere; color: #94a3b8; }
+.connection-option strong { overflow-wrap: anywhere; }
+@media (max-width: 1000px) {
+  .workflow-workspace { grid-template-columns: 220px minmax(300px, 1fr); }
+  .run-panel { grid-column: 1 / -1; max-height: 340px; border-top: 1px solid #e4e9f1; }
+  .workflow-workspace { grid-template-rows: minmax(420px, 1fr) auto; overflow: auto; }
+  .connection-status { display: none; }
+}
+@media (max-width: 640px) {
+  .app-header { padding: 12px; gap: 8px; height: auto; }
+  .app-header nav button { font-size: 11px; padding: 6px; }
+  .app-header .eyebrow { display: none; }
+  .workflow-topbar { flex-wrap: wrap; padding: 10px; gap: 8px; }
+  .workflow-topbar input { width: 160px; }
+  .workflow-workspace { display: flex; flex-direction: column; }
+  .agent-library { max-height: 260px; flex-shrink: 0; }
+  .workflow-canvas { min-height: 460px; flex-shrink: 0; }
+  .run-panel { flex-shrink: 0; }
+  .connection-columns { grid-template-columns: 1fr; }
+}
